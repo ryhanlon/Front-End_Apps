@@ -36,3 +36,22 @@ object,
 video {
     max-width: 100%;
 }
+
+/* =======  header ====== */
+.num-clicks {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+    font-size: 6vh;
+}
+
+
+/* =======  image ====== */
+.pic-frame {
+    display: flex;
+    justify-content: center;
+}
+.picture {
+    padding: 3vh;
+    border: 2px solid black;
+}
