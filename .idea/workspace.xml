@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e402a7c-0520-4398-9ea7-19f69a15e465" name="Default Changelist" comment="" />
+    <list default="true" id="4e402a7c-0520-4398-9ea7-19f69a15e465" name="Default Changelist" comment="feat: Count clicks when kitty is clicked">
+      <change afterPath="$PROJECT_DIR$/cat_clicker/catClicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat_clicker/static/images/cat1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_clicker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cat_clicker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_clicker/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cat_clicker/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_clicker/static/js/catClicker.js" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,47 +58,100 @@
     <session id="-513549943">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="gitignore" value="1" />
+          <entry key="css" value="3" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="2" />
+          <entry key="jpg" value="3" />
+          <entry key="js" value="2" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="2" />
+          <entry key="Image" value="3" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="451" />
+          <entry key="gitignore" value="8" />
+          <entry key="html" value="279" />
+          <entry key="js" value="2427" />
+          <entry key="txt" value="51" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="451" />
+          <entry key="HTML" value="284" />
+          <entry key="JavaScript" value="2422" />
+          <entry key="PLAIN_TEXT" value="59" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat_clicker/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cat_clicker/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.53316647">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/cat_clicker/catClicker.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="421">
+                  <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/cat_clicker/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="42" selection-start-line="5" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cat_clicker/static/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="615">
+                  <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -98,8 +159,12 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/styles/main.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/cat_clicker/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cat_clicker/static/css/main.css" />
+        <option value="$PROJECT_DIR$/cat_clicker/index.html" />
+        <option value="$PROJECT_DIR$/cat_clicker/static/js/catClicker.js" />
+        <option value="$PROJECT_DIR$/cat_clicker/static/catClicker.js" />
+        <option value="$PROJECT_DIR$/cat_clicker/catClicker.js" />
       </list>
     </option>
   </component>
@@ -118,8 +183,9 @@
     <option name="x" value="-215" />
     <option name="y" value="-1057" />
     <option name="width" value="1835" />
-    <option name="height" value="918" />
+    <option name="height" value="1029" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -149,7 +215,7 @@
               <item name="Front-End_Apps" type="462c0819:PsiDirectoryNode" />
               <item name="cat_clicker" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +225,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -166,7 +233,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cat_clicker" />
       <recent name="$PROJECT_DIR$/cat_clicker/static" />
+      <recent name="$PROJECT_DIR$/cat_clicker/static/images" />
+      <recent name="$PROJECT_DIR$/cat_clicker/static/js" />
       <recent name="$PROJECT_DIR$/cat_clicker/images" />
     </key>
   </component>
@@ -182,6 +252,24 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" editBeforeRun="true" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Front-End_Apps/cat_clicker/index.html" useFirstLineBreakpoints="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="catClicker.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/cat_clicker/catClicker.js" working-dir="$PROJECT_DIR$/cat_clicker/static/js">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.catClicker.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.catClicker.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -193,27 +281,35 @@
       <option name="presentableId" value="Default" />
       <updated>1533447974752</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: Count clicks when kitty is clicked">
+      <created>1533454070418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533454070418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-215" y="-1057" width="1835" height="918" extended-state="0" />
+    <frame x="-215" y="-1057" width="1835" height="1029" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526492" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10987172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292978" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20811099" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Quokka" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Quokka" order="8" visible="true" weight="0.32870865" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32870865" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.20581114" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -228,6 +324,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Count clicks when kitty is clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Count clicks when kitty is clicked" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docs/deploy.md" />
@@ -244,23 +344,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/main.js" />
     <entry file="file://$PROJECT_DIR$/cat_clicker/static/main.css" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat_clicker/static/images/cat1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat_clicker/static/images/kitten.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/cat_clicker/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="75">
+          <caret line="5" column="42" selection-start-line="5" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cat_clicker/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="615">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat_clicker/catClicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
         </state>
       </provider>
     </entry>
