@@ -38,22 +38,74 @@ video {
 }
 
 .main-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template: 5% repeat(5, 1fr) 5% / 2fr 5fr;
+    grid-template-areas: "header header"
+                         "kitty-1 feature"
+                         "kitty-2 feature"
+                         "kitty-3 feature"
+                         "kitty-4 feature"
+                         "kitty-5 feature"
+                         "footer footer";
+    justify-items: center;
 }
 
-/* =======  Kitty Gallery ====== */
+
+/* ============================
+        Navigation
+=============================== */
+
+
+
+/* ============================
+        Kittie Thumbnails
+=============================== */
+.thumbnail-1 {
+    grid-area: kitty-1;
+}
+
+.thumbnail-2 {
+    grid-area: kitty-2;
+
+}
+
+.thumbnail-3 {
+    grid-area: kitty-3;
+
+}
+
+.thumbnail-4 {
+    grid-area: kitty-4;
+
+}
+
+.thumbnail-5 {
+    grid-area: kitty-5;
+
+}
+
+.picture {
+
+    padding: 1vh;
+    border: 2px solid black;
+}
+
 .cat-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 25%;
+    margin: 1vh;
 }
 
 .kitty-name {
     margin: 1vw 0;
 }
 
+.img-holder {
+    cursor: pointer;
+}
 .num-clicks {
     display: flex;
     justify-content: center;
@@ -62,8 +114,3 @@ video {
 }
 
 
-
-.picture {
-    padding: 3vh;
-    border: 2px solid black;
-}

@@ -68,13 +68,13 @@ const eventListener = () => {
 };
 
 
-const renderCats = (array) => {
-let catGallery = document.querySelector('.main-container');
+const kittyThumbnails = (array) => {
+let catGallery = document.querySelector('.thumbnails');
 
 	cats.forEach(cat => {
 		let addCat = `<section class="cat-container">
 		 <h3 class="kitty-name">${cat.name}</h3>
-		 <p class="num-clicks ${cat.name}">Number of Clicks: 0</p>
+		 <p class="num-clicks ${cat.name}">Pet Me: 0</p>
 		 <div class="img-holder">
 		 <img id=${cat.name} class="picture" src=${cat.image} alt="Cute kitten">
 		 </div>
@@ -90,7 +90,7 @@ let catGallery = document.querySelector('.main-container');
 };
 
 
-renderCats(cats);
+kittyThumbnails(cats);
 
 
 
