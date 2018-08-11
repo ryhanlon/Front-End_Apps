@@ -67,14 +67,19 @@ const eventListener = () => {
 
 };
 
+const kittyFeature = () => {
+	let catFeature = document.querySelector('.main-container');
+
+};
+
 
 const kittyThumbnails = (array) => {
-let catGallery = document.querySelector('.thumbnails');
+let catGallery = document.querySelector('.thumbnail-container');
 
 	cats.forEach(cat => {
 		let addCat = `<section class="cat-container">
-		 <h3 class="kitty-name">${cat.name}</h3>
-		 <p class="num-clicks ${cat.name}">Pet Me: 0</p>
+		 <h3 class="kitty-name thum-design">${cat.name}</h3>
+		 <p class="num-clicks thum-design ${cat.name}">Click to pet Me!</p>
 		 <div class="img-holder">
 		 <img id=${cat.name} class="picture" src=${cat.image} alt="Cute kitten">
 		 </div>
@@ -96,6 +101,22 @@ kittyThumbnails(cats);
 
 
 
-
+//
+// const kittyThumbnails = (array) => {
+// let catGallery = document.querySelector('.thumbnail-container');
+//
+// 	cats.forEach(cat => {
+// 		let addCat = `<section class="cat-container">
+// 		 <h3 class="kitty-name">${cat.name}</h3>
+// 		 <p class="num-clicks ${cat.name}">Pet Me: 0</p>
+// 		 <div class="img-holder">
+// 		 <img id=${cat.name} class="picture" src=${cat.image} alt="Cute kitten">
+// 		 </div>
+// 		 </section>`;
+//
+// 		console.log(cat.image);
+//
+// 		catGallery.innerHTML += addCat;
+// 	});
 
 
