@@ -71,6 +71,7 @@ video {
     height: 100%;
     width: 100%;
 }
+
 /* ============================
         Navigation
 =============================== */
@@ -93,6 +94,18 @@ video {
 
 }
 
+button {
+    margin: auto;
+    border: 2px solid #3b2711;
+    background-color: rgb(99, 66, 28);
+    border-radius: 5px;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+button:hover {
+    background-color: rgb(255, 198, 117);
+}
 
 .kitty-name {
     margin: 1vw 0;
@@ -112,7 +125,7 @@ video {
 .thum-design {
     display: flex;
     justify-content: center;
-
+}
 
 /* ============================
         Kittie Feature
