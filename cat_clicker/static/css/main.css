@@ -187,3 +187,10 @@ button:hover {
 .feature-container {
     /*margin-top: 30vh;*/
 }
+
+.feature-img {
+    padding: 1vh;
+    border: 4px dotted #3b2711;
+    border-radius: 5px;
+
+}

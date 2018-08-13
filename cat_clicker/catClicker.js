@@ -35,40 +35,39 @@ const cats = [
 
 
 // Counter for counting the times of the clicks
-let counter = 0;
+// let counter = 0;
 
 
-// const kittyCount = () => {
-// 	const countContainer = document.querySelector('.cat-container img-holder img');
-// 	let kittyPets = cats.clicks;
-//
-// 	 kittyPets += 1;
-//
-// 	countContainer.innerHTML = `Number of Clicks: ${counter}`;
-// 	console.log('clicking the kittie' + kittyPets);
-// };
+const kittyCount = (event) => {
 
 
-// Click the kittie
-// const clickKitty = (event) => {
+	let catName = event.target.id;
 
-	// if (event.target === event.currentTarget) {
-	// 	let clickedItem = event.target.id;
-	// 	console.log("hey" + clickedItem);
-	// 	kittyCount(clickedItem);
-	// }
-	// event.stopPropagation();
-// };
+	const countContainer = document.querySelector('.num-clicks');
+	$(countContainer).empty();
+
+	cats.forEach(cat => {
+			$(countContainer).empty();
+
+		if (catName === cat.name)
+			cat["clicks"] += 1;
+
+		countContainer.innerHTML = `${cat.clicks} Pets`;
+		// $('.num-clicks').append(`<span>${cat["clicks"]} Pets</span>`);
+		console.log(`clicking the ${cat.name} ${cat.clicks}`);
+
+	});
+
+};
 
 
 const kittyChoice = (event) => {
 	// add picture to feature space to pet
 	let pictureName = event.target.id;
-	console.log(pictureName);
 	kittyFeature(pictureName);
 };
 
-// eventListener for clicks
+// eventListener for choice
 const eventListener = () => {
 	// const kittyClicks = document.querySelector('.thumbnail-container cat-container button');
 
@@ -76,13 +75,12 @@ const eventListener = () => {
 
 };
 
+// eventListener for clicks
+const eventListener2 = () => {
 
-// const eventListener2 = () => {
-// 	const kittyClicks = document.querySelector('.img-holder');
-//
-// 	kittyClicks.addEventListener('click', kittyCount);
-//
-// };
+	$('.img-holder').on('click', kittyCount);
+
+};
 
 const kittyFeature = (pictureName) => {
 	let catFeature = document.querySelector('.main-container');
@@ -90,14 +88,14 @@ const kittyFeature = (pictureName) => {
 
 		let addFeatureCat = `<section class="feature-container">
 			<h3 class="kitty-name thum-design">${pictureName}</h3>
-			 <p class="num-clicks thum-design ${pictureName}">pets</p>
+			 <p class="num-clicks thum-design ${pictureName}"> 0 pets</p>
 			 <div class="img-holder">
-		 	<img id=${pictureName} class="picture" src='static/images/${pictureName}.jpg' alt="Cute kitten" />
+		 	<img id=${pictureName} class="feature-img" src='static/images/${pictureName}.jpg' alt="Cute kitten" />
 		 	</div>
 		 	</section>`;
 
 		catFeature.innerHTML += addFeatureCat;
-	// eventListener2();
+		eventListener2();
 
 };
 
@@ -125,13 +123,6 @@ let catGallery = document.querySelector('.thumbnail-container');
 kittyThumbnails(cats);
 
 
-
-
-
-//
-// const kittyThumbnails = (array) => {
-// let catGallery = document.querySelector('.thumbnail-container');
-//
 // 	cats.forEach(cat => {
 // 		let addCat = `<section class="cat-container">
 // 		 <h3 class="kitty-name">${cat.name}</h3>
