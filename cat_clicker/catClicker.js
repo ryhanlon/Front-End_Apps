@@ -88,7 +88,7 @@ const kittyFeature = (pictureName) => {
 	let catFeature = document.querySelector('.main-container');
 	$(catFeature).empty();
 
-		let addFeatureCat = `<section class="cat-container">
+		let addFeatureCat = `<section class="feature-container">
 			<h3 class="kitty-name thum-design">${pictureName}</h3>
 			 <p class="num-clicks thum-design ${pictureName}">pets</p>
 			 <div class="img-holder">
@@ -106,9 +106,9 @@ const kittyThumbnails = (array) => {
 let catGallery = document.querySelector('.thumbnail-container');
 
 	cats.forEach((cat, index) => {
-		let addCat = `<section class="cat-container">
+		let addCat = `<section class="cat-container ${cat.name}">
 		 <h3 class="kitty-name thum-design">${cat.name}</h3>
-		 <button id=${cat.name} class="thum-design ${cat.name}">Click to pet me!</button>
+		 <button id=${cat.name} class="thum-design ${cat.name}">Pet me!</button>
 		 <div class="img-holder">
 		 <img id=${index} class="picture" src=${cat.image} alt="Cute kitten">
 		 </div>

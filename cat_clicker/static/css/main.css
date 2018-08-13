@@ -37,22 +37,34 @@ video {
     max-width: 100%;
 }
 
+/*.body-container {*/
+    /*display: grid;*/
+    /*grid-template: 5% repeat(5, 1fr) 5% / 20% 80%;*/
+    /*grid-template-areas: "thumbnail header"*/
+                         /*"thumbnail feature"*/
+                         /*"thumbnail feature"*/
+                         /*"thumbnail feature"*/
+                         /*"thumbnail feature"*/
+                         /*"thumbnail feature"*/
+                         /*"footer footer";*/
+    /*justify-items: center;*/
+    /*!*background-color: #400711;*!*/
+/*}*/
+
 .body-container {
-    display: grid;
-    grid-template: 5% repeat(5, 1fr) 5% / 30% 70%;
-    grid-template-areas: "header header"
-                         "thumbnail feature"
-                         "thumbnail feature"
-                         "thumbnail feature"
-                         "thumbnail feature"
-                         "thumbnail feature"
-                         "footer footer";
-    justify-items: center;
-    /*background-color: #400711;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #9b1128;
 }
 
 .thumbnail-container {
-    grid-area: thumbnail;
+    display: grid;
+    grid-template: 100% / repeat(5, 1fr);
+    grid-template-areas: "meme snooks strings arbolito lambda";
+    /*justify-items: center;*/
+    /*background-color: #400711;*/
     /*display: flex;*/
     /*justify-content: center;*/
     /*flex-direction: column;*/
@@ -66,7 +78,9 @@ video {
 }
 
 .main-container {
-    grid-area: feature;
+    /*grid-area: feature;*/
+    display: flex;
+    justify-content: center;
     background-color: #63421c;
     height: 100%;
     width: 100%;
@@ -81,9 +95,32 @@ video {
 /* ============================
         Kittie Thumbnails
 =============================== */
+.cat-container {
+    grid-area: thumbnail;
+}
+
+.Meme {
+    grid-area: meme;
+}
+
+.Snooks {
+    grid-area: snooks;
+}
+
+.Strings {
+    grid-area: strings;
+}
+
+.Arbolito {
+    grid-area: arbolito;
+}
+
+.Lambda {
+    grid-area: lambda;
+}
 
 .img-holder {
-    border-bottom: 4px solid #63421c;
+    /*border-left: 4px solid #63421c;*/
     padding: 2vh;
 }
 
@@ -131,3 +168,22 @@ button:hover {
         Kittie Feature
 =============================== */
 
+.placeholder {
+    display: flex;
+    justify-content: center;
+    background-color: #030200;
+    margin: 3rem 2rem;
+    border: 3px inset #a46e2e;
+    height: 70vh;
+    width: 65vw;
+}
+
+.rubrix-text {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+
+.feature-container {
+    /*margin-top: 30vh;*/
+}
