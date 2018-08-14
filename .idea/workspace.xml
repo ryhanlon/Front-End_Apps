@@ -4,6 +4,7 @@
     <list default="true" id="4e402a7c-0520-4398-9ea7-19f69a15e465" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cat_clicker/catClicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/cat_clicker/catClicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat_clicker/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cat_clicker/static/css/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,29 +98,29 @@
           <entry key="css" value="2163" />
           <entry key="gitignore" value="8" />
           <entry key="html" value="466" />
-          <entry key="js" value="8765" />
-          <entry key="txt" value="678" />
+          <entry key="js" value="9073" />
+          <entry key="txt" value="720" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2163" />
           <entry key="HTML" value="477" />
-          <entry key="JavaScript" value="8754" />
-          <entry key="PLAIN_TEXT" value="686" />
+          <entry key="JavaScript" value="9062" />
+          <entry key="PLAIN_TEXT" value="728" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6278481">
+    <splitter split-orientation="horizontal" split-proportion="0.44683543">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cat_clicker/catClicker.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8">
-                  <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+                <state relative-caret-position="1635">
+                  <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -143,7 +144,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cat_clicker/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="30">
@@ -152,11 +153,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cat_clicker/static/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="155" column="28" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
+                <state relative-caret-position="870">
+                  <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-end-line="59" />
                 </state>
               </provider>
             </entry>
@@ -374,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534193149987</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add clicks for each featured kitty">
+      <created>1534213333558</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534213333558</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -422,7 +430,8 @@
     <MESSAGE value="style: Re-arranged grid for the thumbnails&#10;&#10;Thumbnails go across the screen instead of down the left side." />
     <MESSAGE value="feat: First part of counting clicks" />
     <MESSAGE value="refactor: Show featured kitty" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Show featured kitty" />
+    <MESSAGE value="feat: add clicks for each featured kitty" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add clicks for each featured kitty" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docs/deploy.md" />
@@ -491,10 +500,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cat_clicker/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/cat_clicker/catClicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="155" column="28" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
+        <state relative-caret-position="1635">
+          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -505,13 +517,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cat_clicker/catClicker.js">
+    <entry file="file://$PROJECT_DIR$/cat_clicker/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="870">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-end-line="59" />
         </state>
       </provider>
     </entry>

@@ -4,31 +4,31 @@ const data = {
 	cats: [
 		{
 			name: 'Meme',
-			clicks: 1,
+			clicks: 0,
 			image: 'static/images/Meme.jpg',
 			copyright: 'photo by Sonoraxus'
 		},
 		{
 			name: 'Snooks',
-			clicks: 1,
+			clicks: 0,
 			image: 'static/images/Snooks.jpg',
 			copyright: 'photo by Paul Reynolds'
 		},
 		{
 			name: 'Strings',
-			clicks: 1,
+			clicks: 0,
 			image: 'static/images/Strings.jpg',
 			copyright: 'photo by HolgersFotografie'
 		},
 		{
 			name: 'Arbolito',
-			clicks: 1,
+			clicks: 0,
 			image: 'static/images/Arbolito.jpg',
 			copyright: 'photo by Kessa'
 		},
 		{
 			name: 'Lambda',
-			clicks: 1,
+			clicks: 0,
 			image: 'static/images/Lambda.jpg',
 			copyright: 'photo by Max Pixel'
 		}],
@@ -43,13 +43,13 @@ const octopus = {
 };
 
 
-// Counting the number of pets
-const kittyCount = (featuredKitty, kittyPosition) => {
+// Counting the number of pets and storing them in Model
+const kittyCount = () => {
 	const countContainer = document.querySelector('.seeMe');
 	let kitty = data.featuredKitty;
-
 	kitty.clicks += 1;
-		countContainer.innerHTML = `${kitty.clicks} Pets`;
+
+	countContainer.innerHTML = `${kitty.clicks} pets`;
 		// // $(countContainer).append(`<span>${cat["clicks"]} Pets</span>`);
 		console.log(`clicking the ${kitty.name} ${kitty.clicks}`);
 
@@ -62,36 +62,34 @@ const eventListener2 = () => {
 };
 
 
+// Viewing the selected kitty, accepting kittyPosition for accessing the selected kitty data
 const kittyFeature = (kittyPosition) => {
 	let catFeature = document.querySelector('.main-container');
 	$(catFeature).empty();
 
 	// Get data
 	let cats = data.cats;
-	// console.log(`kjhkjh ${kittyPosition}`);
-	// console.log(cats[kittyPosition]);
 
 	// Add selected kitty's data to featuredKitty
 	data.featuredKitty = cats[kittyPosition];
 	let featuredKitty = data.featuredKitty;
-	// let meow = cats[kittyPosition];
-	// console.log(meow);
-
 
 	let addFeatureCat = `<section class="feature-container">
 							<h3 class="kitty-name thum-design">${featuredKitty.name}</h3>
-							<p class="num-clicks seeMe thum-design ${featuredKitty.clicks}"> 0 pets</p>
+							<p class="num-clicks seeMe thum-design">${featuredKitty.clicks} pets</p>
 							<div class="img-holder">
 								<img id=${featuredKitty.name} class="feature-img" src='${featuredKitty.image}' alt="Cute kitten" />
 							</div>
 						</section>`;
 			catFeature.innerHTML += addFeatureCat;
 
-			eventListener2(featuredKitty, kittyPosition);
+			eventListener2();
 };
 
+
+// Capturing the event for the kitty clicked
 const kittyChoice = (event) => {
-	// add picture to feature space to pet
+	// Capturing id of clicked event
 	kittyPosition = event.target.id;
 	// console.log(`clicked kitty id; ${kittyPosition}`);
 
@@ -105,7 +103,8 @@ const eventListener = () => {
 };
 
 
-const kittyThumbnails = (data) => {
+// View the thumbnails
+const kittyThumbnails = () => {
 	// Target for the thumbnails
 	const catGalleryThumbnails = document.querySelector('.thumbnail-container');
 	// Target for kitty feature
@@ -115,20 +114,19 @@ const kittyThumbnails = (data) => {
 
 
 	for (let i = 0; i < cats.length; i++) {
-
 			let cat = cats[i];
 			console.log('cat data ' + cat.name);
 
-		//   html cat for the thumbnail
-		let addCat = `<section class="cat-container ${cat.name}">
-					 <h3 class="kitty-name thum-design">${cat.name}</h3>
-					 <button id=${i} class="thum-design ${cat.name}">Pet me!</button>
-					 <div class="img-holder">
-					 <img id="cat-feature" class="picture" src=${cat.image} alt="Cute kitten">
-					 </div>
-					 </section>`;
-	// add each cat thumbnail to the DOM
-		catGalleryThumbnails.innerHTML += addCat;
+			//   html cat for the thumbnail
+			let addCat = `<section class="cat-container ${cat.name}">
+						 <h3 class="kitty-name thum-design">${cat.name}</h3>
+						 <button id=${i} class="thum-design ${cat.name}">Pet me!</button>
+						 <div class="img-holder">
+						 <img id="cat-feature" class="picture" src=${cat.image} alt="Cute kitten">
+						 </div>
+						 </section>`;
+			// add each cat thumbnail to the DOM
+			catGalleryThumbnails.innerHTML += addCat;
 	}
 	eventListener();
 };
@@ -150,18 +148,5 @@ const catFeatureView = {
 kittyThumbnails(data);
 
 
-// 	cats.forEach(cat => {
-// 		let addCat = `<section class="cat-container">
-// 		 <h3 class="kitty-name">${cat.name}</h3>
-// 		 <p class="num-clicks ${cat.name}">Pet Me: 0</p>
-// 		 <div class="img-holder">
-// 		 <img id=${cat.name} class="picture" src=${cat.image} alt="Cute kitten">
-// 		 </div>
-// 		 </section>`;
-//
-// 		console.log(cat.image);
-//
-// 		catGallery.innerHTML += addCat;
-// 	});
 
 
