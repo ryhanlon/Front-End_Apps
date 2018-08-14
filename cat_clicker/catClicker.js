@@ -1,6 +1,6 @@
 /* ========= Model ======== */
 const data = {
-	currentCat: null,
+	featuredKitty: null,
 	cats: [
 		{
 			name: 'Meme',
@@ -38,81 +38,63 @@ const data = {
 
 /* ========= Octopus ======== */
 
-let clickKittyData = null;
 const octopus = {
 
 };
 
 
 // Counting the number of pets
-// const kittyCount = (event) => {
-//
-//
-// 	let catName = event.target.id;
-//
-// 	const countContainer = document.querySelector('main section .seeMe');
-//
-// 	cats.forEach((cat, index) => {
-// 		if (catName === cat.name)
-// 			cat.clicks += 1;
-// 		// countContainer.innerHTML = `${cat.clicks} Pets`;
-// 		// // $(countContainer).append(`<span>${cat["clicks"]} Pets</span>`);
-// 		// console.log(`clicking the ${cat.name} ${cat.clicks}`);
-//
-// 	});
-//
-// 	cats.forEach((cat) => {
-// 		if (catName === cat.name)
-// 			console.log(`${catName} and ${cat.clicks}`);
-// 		let catClicks = cat.clicks;
-//
-// 			document.getElementsByClassName('.seeMe').innerHTML = `${catClicks} Pets`;
-// 			console.log('yooowowow' + catClicks);
-// 			// console.log(`clicking the ${cat.name} ${cat.clicks}`);
-// 	});
-//
-// };
+const kittyCount = (featuredKitty, kittyPosition) => {
+	const countContainer = document.querySelector('.seeMe');
+	let kitty = data.featuredKitty;
+
+	kitty.clicks += 1;
+		countContainer.innerHTML = `${kitty.clicks} Pets`;
+		// // $(countContainer).append(`<span>${cat["clicks"]} Pets</span>`);
+		console.log(`clicking the ${kitty.name} ${kitty.clicks}`);
+
+};
 
 
 // eventListener for clicks
-// const eventListener2 = () => {
-// 	$('.img-holder').on('click', kittyCount);
-// };
+const eventListener2 = () => {
+	$('.img-holder').on('click', kittyCount);
+};
 
 
 const kittyFeature = (kittyPosition) => {
 	let catFeature = document.querySelector('.main-container');
 	$(catFeature).empty();
 
+	// Get data
 	let cats = data.cats;
-	console.log(`kjhkjh ${kittyPosition}`);
-	console.log(cats[kittyPosition]);
-	let featuredKitty = cats[kittyPosition];
+	// console.log(`kjhkjh ${kittyPosition}`);
+	// console.log(cats[kittyPosition]);
+
+	// Add selected kitty's data to featuredKitty
+	data.featuredKitty = cats[kittyPosition];
+	let featuredKitty = data.featuredKitty;
+	// let meow = cats[kittyPosition];
+	// console.log(meow);
 
 
 	let addFeatureCat = `<section class="feature-container">
-									<h3 class="kitty-name thum-design">${featuredKitty.name}</h3>
-									 <p class="num-clicks seeMe thum-design ${featuredKitty.clicks}"> 0 pets</p>
-									 <div class="img-holder">
-									<img id=${featuredKitty.name} class="feature-img" src='${featuredKitty.image}' alt="Cute kitten" />
-									</div>
-									</section>`;
+							<h3 class="kitty-name thum-design">${featuredKitty.name}</h3>
+							<p class="num-clicks seeMe thum-design ${featuredKitty.clicks}"> 0 pets</p>
+							<div class="img-holder">
+								<img id=${featuredKitty.name} class="feature-img" src='${featuredKitty.image}' alt="Cute kitten" />
+							</div>
+						</section>`;
 			catFeature.innerHTML += addFeatureCat;
 
-
-
-
-
-		// catFeature.innerHTML += addFeatureCat;
-		// eventListener2();
-		// kittyCount(event);
-
+			eventListener2(featuredKitty, kittyPosition);
 };
 
 const kittyChoice = (event) => {
 	// add picture to feature space to pet
 	kittyPosition = event.target.id;
 	// console.log(`clicked kitty id; ${kittyPosition}`);
+
 	kittyFeature(kittyPosition);
 };
 
@@ -137,7 +119,7 @@ const kittyThumbnails = (data) => {
 			let cat = cats[i];
 			console.log('cat data ' + cat.name);
 
-		// HTLM for each cat for the thumbnail
+		//   html cat for the thumbnail
 		let addCat = `<section class="cat-container ${cat.name}">
 					 <h3 class="kitty-name thum-design">${cat.name}</h3>
 					 <button id=${i} class="thum-design ${cat.name}">Pet me!</button>
@@ -163,9 +145,6 @@ const catFeatureView = {
 
 
 };
-
-
-
 
 
 kittyThumbnails(data);
